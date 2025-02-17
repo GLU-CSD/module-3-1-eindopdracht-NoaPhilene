@@ -1,0 +1,19 @@
+#achtergrond {
+    width: 1500px;
+    height: 738px;
+    background-color: #fc229063;
+}
+
+*{
+    padding:0;
+    margin:0;
+}
+
+#witVrierkant{
+    width: 1307px;
+    height: 700px;
+    margin-top: -610px;
+    margin-left: 194px;
+    background-color: aqua;
+}
+/*-700*/
