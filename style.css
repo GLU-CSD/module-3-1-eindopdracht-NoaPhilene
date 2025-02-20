@@ -3,23 +3,28 @@
     margin:0;
 }
 
-#achtergrond {
+#topBar {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
     width: 1500px;
-    height: 963px;
+    height: 160px;
     background-color: #dcaeae;
 }
 
 #logo{
     width: 150px;
+    height: auto;
     border:5px solid black;
 }
 
 h1{
+    position: relative;
+    top: -52px;
     font-family: 'Bunga', sans-serif;
-    font-size: 66px;
+    font-size: 69px;
     font-weight: normal;
-    margin-left: 173px;
-    margin-top: -141px;
     color: #432018;
 }
 
@@ -29,13 +34,78 @@ h1{
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: 'handmade';
+    src: url('assets/fonts/beautiful-handmade') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 
-#witVierkant{
-    width: 1340px;
-    height: 692px;
-    margin-top: -802px;
-    margin-left: 160px;
+#winkelmandje{
+    position: relative;
+    top: -17px;
+    width: 170px;
+    height: auto;
+}
+
+#sideBar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 159px;
+    height: 1000px;
+    background-color: #dcaeae;
+    margin-top: 0px;
+    margin-left: 1px;
+}
+
+h2{
+    padding-top: 10px;
+    font-family: 'Bunga', sans-serif;
+    font-size: 39px;
+    font-weight: normal;
+    color: #432018;
+}
+
+h3{
+    margin-top: -16px;
+    padding-bottom: 10px;
+    font-family: 'handmade';
+    font-size: 23px;
+    width: 69px;
+    color: #432018;
+}
+
+h4{
+    margin-top: -6px;
+    padding-bottom: 14px;
+    font-family: 'handmade';
+    font-size: 21px;
+    width: 150px;
+    color: #432018;
+}
+
+h5{
+    margin-top: -6px;
+    padding-bottom: 14px;
+    font-family: 'handmade';
+    font-size: 21px;
+    width: 87px;
+    color: #432018;
+}
+
+#achtergrond{
+    width: 1500px;
+    height: 1000px;
+    margin-left: 0px;
     background-color: #f1e8e2;
+}
+
+#bottomBar{
+    width: 1500px;
+    height: 250px;
+    background-color: #dcaeae;
 }
 
 
