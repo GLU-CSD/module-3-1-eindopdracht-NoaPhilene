@@ -8,7 +8,7 @@
     flex-direction: row;
     align-items: baseline;
     justify-content: space-between;
-    width: 1500px;
+    width: 1512px;
     height: 160px;
     background-color: #dcaeae;
 }
@@ -96,14 +96,16 @@ h5{
 }
 
 #achtergrond{
-    width: 1500px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 1512px;
     height: 1000px;
-    margin-left: 0px;
     background-color: #f1e8e2;
 }
 
 #bottomBar{
-    width: 1500px;
+    width: 1512px;
     height: 250px;
     background-color: #dcaeae;
 }
