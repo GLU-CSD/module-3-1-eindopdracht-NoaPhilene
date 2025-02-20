@@ -1,18 +1,41 @@
-#achtergrond {
-    width: 1500px;
-    height: 738px;
-    background-color: #fc229063;
-}
-
 *{
     padding:0;
     margin:0;
 }
 
-#witVierkant{
+#achtergrond {
     width: 1500px;
+    height: 963px;
+    background-color: #dcaeae;
+}
+
+#logo{
+    width: 150px;
+    border:5px solid black;
+}
+
+h1{
+    font-family: 'Bunga', sans-serif;
+    font-size: 66px;
+    font-weight: normal;
+    margin-left: 173px;
+    margin-top: -141px;
+    color: #432018;
+}
+
+@font-face {
+    font-family: 'Bunga';
+    src: url('assets/fonts/bunga-cempaka/BungaCempakaDemoRegular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#witVierkant{
+    width: 1340px;
     height: 692px;
-    margin-top: -587px;
-    background-color: aqua;
-    }
-/*-700*/
+    margin-top: -802px;
+    margin-left: 160px;
+    background-color: #f1e8e2;
+}
+
+
