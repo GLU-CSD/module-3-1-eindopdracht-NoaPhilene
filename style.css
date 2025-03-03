@@ -3,6 +3,12 @@
     margin:0;
 }
 
+#container {
+    width: 100%;
+    max-width: 1512px;
+    margin: 0 auto;
+}
+
 #topBar {
     display: flex;
     flex-direction: row;
@@ -63,7 +69,7 @@ h1{
 h2{
     padding-top: 10px;
     font-family: 'Bunga', sans-serif;
-    font-size: 39px;
+    font-size: 36px;
     font-weight: normal;
     color: #432018;
 }
@@ -82,7 +88,7 @@ h4{
     padding-bottom: 14px;
     font-family: 'handmade';
     font-size: 21px;
-    width: 150px;
+    width: 142px;
     color: #432018;
 }
 
