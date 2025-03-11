@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bestel.css">
+    <title>Bestelling</title>
+</head>
+<body>
+    <div id="topBar"> 
+        <img src="assets\img\Leonardo_Phoenix_10_Create_a_modern_logo_for_a_brand_named_Pet_2.jpg" id="logo">
+        <h1>Petit Bonheur</h1>
+        <a href="index.html"><img src="assets\img\huisje.png" id="huisje"></a>
+    </div>
+    <div id="achtergrond">
+        <form action="doelbestand.php" method="post">
+        <h2>Je gegevens</h2>
+        <div id="verzendwijze">Type bestelling</div>
+        <input type="radio" required name="bestelling" value="particulier"/>Particulier
+        <input type="radio" required name="bestelling" value="Zakelijk"/>Zakelijk<br>
+        
+        <div id="verzendwijze">Aanhef</div>
+        <input type="radio" name="aanhef" value="Dhr."/> Dhr.
+        <input type="radio" name="aanhef" value="Mevr."/> Mevr.<br>
+        Naam: <input type="vnaam" required placeholder="Voornaam" />
+        <input type="tnaam" placeholder="Tussenv." />
+        <input type="anaam" placeholder="Achternaam" /><br>
+        Postcode: <input type="text" required placeholder="1234 AB" /><br>
+        Huisnummer: <input type="number" required placeholder="Nr." />
+        <input type="text" placeholder="toev." /><br>
+        Land: <input id="country" type="text" name="country" size="40" list="countries" placeholder="country"/>
+        <datalist id="countries">
+            <option value="Australia">
+            <option value="Canada">
+            <option value="Germany">
+            <option value="France">
+            <option value="United Kingdom">
+            <option value="United States">
+        </datalist><br>
+        <div id="Afleveradres">Afleveradres</div>
+        <input type="radio" name="Afleveradres" value="bovenstaand"/>Op bovenstaand adres bezorgen   
+        <input type="radio" name="Afleveradres" value="ander"/>ander adres bezorgen<br>
+        E-mail: <input type="email" required placeholder="E-mail"/><br>
+        Telefoonnummer: <input type="nummer" required placeholder="Telefoonnummer"/><br>
+        Geboortedatum: <input type="date" name="datum" placeholder="jouw geboortedatum" /><br>
+        <div id="Verzendwijze factuur">Verzendwijze factuur</div>
+        <input type="radio" required name="factuur" value="bovenstaand"/>Factuur per e-mail 
+        <input type="radio" required name="factuur" value="ander"/>Factuur geprint bij de bestelling<br>
+
+        <input type="submit" />
+    </form>
+    </div>
+</body>
+</html>

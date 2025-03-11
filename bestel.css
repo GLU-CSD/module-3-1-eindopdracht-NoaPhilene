@@ -1,0 +1,52 @@
+*{
+    padding:0;
+    margin:0;
+}
+
+#topBar {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+    width: 1512px;
+    height: 160px;
+    background-color: #dcaeae;
+}
+
+#logo{
+    width: 150px;
+    height: auto;
+    border:5px solid black;
+}
+
+#huisje{
+    width: 150px;
+    height: 128px;
+}
+
+#achtergrond{
+    width: 1512px;
+    height: 1000px;
+    background-color: #f1e8e2;
+    color: #432018;
+}
+
+@font-face {
+    font-family: 'Bunga';
+    src: url('assets/fonts/bunga-cempaka/BungaCempakaDemoRegular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1{
+    position: relative;
+    top: -52px;
+    font-family: 'Bunga', sans-serif;
+    font-size: 69px;
+    font-weight: normal;
+    color: #432018;
+}
+
+h2{
+    font-size: 46px;
+}

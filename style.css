@@ -81,6 +81,11 @@ h3{
     color: #432018;
 }
 
+h3 a{
+    text-decoration: none;
+    color: #432018;
+}
+
 h4{
     margin-top: -6px;
     padding-bottom: 14px;
@@ -109,9 +114,13 @@ h5{
 }
 
 #bottomBar{
+    display:flex;
+    justify-content: center;
+    align-items: center;
     width: 1512px;
     height: 250px;
     background-color: #dcaeae;
+
 }
 
 #productContainer {
