@@ -14,40 +14,37 @@
     </div>
     <div id="achtergrond">
         <form action="doelbestand.php" method="post">
-        <h2>Je gegevens</h2>
-        <div id="verzendwijze">Type bestelling</div>
-        <input type="radio" required name="bestelling" value="particulier"/>Particulier
-        <input type="radio" required name="bestelling" value="Zakelijk"/>Zakelijk<br>
-        
-        <div id="verzendwijze">Aanhef</div>
-        <input type="radio" name="aanhef" value="Dhr."/> Dhr.
-        <input type="radio" name="aanhef" value="Mevr."/> Mevr.<br>
-        Naam: <input type="vnaam" required placeholder="Voornaam" />
-        <input type="tnaam" placeholder="Tussenv." />
-        <input type="anaam" placeholder="Achternaam" /><br>
-        Postcode: <input type="text" required placeholder="1234 AB" /><br>
-        Huisnummer: <input type="number" required placeholder="Nr." />
-        <input type="text" placeholder="toev." /><br>
-        Land: <input id="country" type="text" name="country" size="40" list="countries" placeholder="country"/>
-        <datalist id="countries">
-            <option value="Australia">
-            <option value="Canada">
-            <option value="Germany">
-            <option value="France">
-            <option value="United Kingdom">
-            <option value="United States">
-        </datalist><br>
-        <div id="Afleveradres">Afleveradres</div>
-        <input type="radio" name="Afleveradres" value="bovenstaand"/>Op bovenstaand adres bezorgen   
-        <input type="radio" name="Afleveradres" value="ander"/>ander adres bezorgen<br>
-        E-mail: <input type="email" required placeholder="E-mail"/><br>
-        Telefoonnummer: <input type="nummer" required placeholder="Telefoonnummer"/><br>
-        Geboortedatum: <input type="date" name="datum" placeholder="jouw geboortedatum" /><br>
-        <div id="Verzendwijze factuur">Verzendwijze factuur</div>
-        <input type="radio" required name="factuur" value="bovenstaand"/>Factuur per e-mail 
-        <input type="radio" required name="factuur" value="ander"/>Factuur geprint bij de bestelling<br>
+            <h2>Je gegevens</h2>
+            
+            <div id="verzendwijze">Aanhef</div>
+            <input type="radio" name="aanhef" value="Dhr."/> Dhr.
+            <input type="radio" name="aanhef" value="Mevr."/> Mevr.
+            <input type="radio" name="aanhef" value="Anders."/> Anders.<br>
+            Naam: <input type="vnaam" required placeholder="Voornaam" />
+            <input type="tnaam" placeholder="Tussenv." />
+            <input type="anaam" required placeholder="Achternaam" /><br>
+            Straatnaam: <input type="text" required placeholder="Straatnaam"><br>
+            Huisnummer: <input type="number" required placeholder="Nr." />
+            <input type="text" placeholder="toev." /><br>
+            Postcode: <input type="text" required placeholder="1234 AB" /><br>
+            Land: <input id="country" type="text" name="country" size="40" list="countries" placeholder="country"/>
+            <datalist id="countries">
+                <option value="Australia">
+                <option value="Canada">
+                <option value="Germany">
+                <option value="France">
+                <option value="United Kingdom">
+                <option value="United States">
+            </datalist><br>
+            E-mail: <input type="email" required placeholder="E-mail"/><br>
+            Telefoonnummer: <input type="nummer" required placeholder="Telefoonnummer"/><br>
+            Geboortedatum: <input type="date" name="datum" required placeholder="jouw geboortedatum" /><br>
+            Algemene voorwaarden: <input type="checkbox"> Ja, ik accepteer Petit Bonheur algemene voorwaarden 
+            <div id="Verzendwijze factuur">Verzendwijze factuur</div>
+            <input type="radio" required name="factuur" value="bovenstaand"/>Factuur per e-mail 
+            <input type="radio" required name="factuur" value="ander"/>Factuur geprint bij de bestelling<br>
 
-        <input type="submit" />
+        <input type="submit"/>
     </form>
     </div>
 </body>
