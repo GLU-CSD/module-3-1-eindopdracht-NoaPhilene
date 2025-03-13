@@ -3,6 +3,12 @@
     margin:0;
 }
 
+#container {
+    width: 100%;
+    max-width: 1512px;
+    margin: 0 auto;
+}
+
 #topBar {
     display: flex;
     flex-direction: row;
@@ -49,4 +55,21 @@ h1{
 
 h2{
     font-size: 46px;
+}
+
+.column-container{
+    display: flex;
+    justify-content: center;
+}
+.column{
+   padding-right: 20px;
+}
+
+.column2{
+    font-size: 19px;
+}
+
+h3{
+    font-size: 20px;
+    text-align: right;
 }
