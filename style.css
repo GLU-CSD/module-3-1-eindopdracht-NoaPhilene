@@ -29,7 +29,7 @@ h1{
     position: relative;
     top: -52px;
     font-family: 'Bunga', sans-serif;
-    font-size: 69px;
+    font-size: 5vw;
     font-weight: normal;
     color: #432018;
 }
@@ -60,7 +60,7 @@ h1{
     align-items: center;
     justify-content: flex-start;
     width: 159px;
-    height: 1000px;
+    height: auto;
     background-color: #dcaeae;
 }
 
@@ -124,8 +124,8 @@ h5{
 
 #achtergrond{
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    /* flex-direction: column;
+    flex-wrap: wrap; */
     height: auto;
     background-color: #f1e8e2;
 }
@@ -142,7 +142,7 @@ h5{
 #productContainer {
     display: flex;
     gap: 25px;
-    /* padding: 20px; */
+    padding: 20px;
     flex-wrap: wrap;
     font-weight: bold;
 }
@@ -162,4 +162,10 @@ h5{
     width: 69%;
     height: 100%;
     object-fit: cover; /* Laat de afbeelding netjes in het vakje passen */
+}
+
+@media screen and (max-width: 600px){
+    h1{
+        font-size: small;
+    }
 }
