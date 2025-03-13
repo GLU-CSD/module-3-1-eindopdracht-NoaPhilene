@@ -15,58 +15,61 @@
     </div>
     <div id="achtergrond">
         <form action="doelbestand.php" method="post">
-            <h2>Je gegevens</h2>
+            <h2>Je gegevens</h2><br>
             <div class="column-container">
-            <div class="column">
-               <h3>
-                Aanhef:<br>
-                Naam:<br>
-                Straatnaam:<br>
-                Huisnummer:<br>
-                Postcode:<br>
-                Land:<br>
-                E-mail:<br>
-                Telefoonnummer:<br>
-                Geboortedatum:<br>
-                Algemene voorwaarden:<br>
-                Verzendwijze factuur:<br>
-               </h3>
+                <div class="column">
+                <h3>
+                    Aanhef:<br>
+                    Naam:<br>
+                    Straatnaam:<br>
+                    Huisnummer:<br>
+                    Postcode:<br>
+                    Land:<br>
+                    E-mail:<br>
+                    Telefoonnummer:<br>
+                    Geboortedatum:<br>
+                    Algemene voorwaarden:<br>
+                    Verzendwijze factuur:<br>
+                </h3>
+                </div>
+
+                <div class="column2">
+                    <div id="verzendwijze"></div>
+                    <input type="radio" name="aanhef" value="Dhr."/> Dhr.
+                    <input type="radio" name="aanhef" value="Mevr."/> Mevr.
+                    <input type="radio" name="aanhef" value="Anders."/> Anders.<br>
+                    <input type="vnaam" required placeholder="Voornaam" />
+                    <input type="tnaam" placeholder="Tussenv." />
+                    <input type="anaam" required placeholder="Achternaam" /><br>
+                    <input type="text" required placeholder="Straatnaam"><br>
+                    <input type="number" required placeholder="Nr." />
+                    <input type="text" placeholder="toev." /><br>
+                    <input type="text" required placeholder="1234 AB" /><br>
+                    <input id="country" type="text" name="country" size="40" list="countries" placeholder="country"/>
+                    <datalist id="countries">
+                        <option value="Australia">
+                        <option value="Canada">
+                        <option value="Germany">
+                        <option value="France">
+                        <option value="United Kingdom">
+                        <option value="United States">
+                    </datalist><br>
+                    <input type="email" required placeholder="E-mail"/><br>
+                    <input type="nummer" required placeholder="Telefoonnummer"/><br>
+                    <input type="date" name="datum" required placeholder="jouw geboortedatum" /><br>
+                    <input type="checkbox"> Ja, ik accepteer de algemene voorwaarden 
+                    <div id="Verzendwijze factuur"></div>
+                    <input type="radio" required name="factuur" value="bovenstaand"/>Factuur per e-mail 
+                    <input type="radio" required name="factuur" value="ander"/>Factuur geprint bij de bestelling<br><br>
+                    <input type="submit"/>
+                </div>
             </div>
-
-            <div class="column2">
-            <div id="verzendwijze"></div>
-            <input type="radio" name="aanhef" value="Dhr."/> Dhr.
-            <input type="radio" name="aanhef" value="Mevr."/> Mevr.
-            <input type="radio" name="aanhef" value="Anders."/> Anders.<br>
-            <input type="vnaam" required placeholder="Voornaam" />
-            <input type="tnaam" placeholder="Tussenv." />
-            <input type="anaam" required placeholder="Achternaam" /><br>
-            <input type="text" required placeholder="Straatnaam"><br>
-            <input type="number" required placeholder="Nr." />
-            <input type="text" placeholder="toev." /><br>
-            <input type="text" required placeholder="1234 AB" /><br>
-            <input id="country" type="text" name="country" size="40" list="countries" placeholder="country"/>
-            <datalist id="countries">
-                <option value="Australia">
-                <option value="Canada">
-                <option value="Germany">
-                <option value="France">
-                <option value="United Kingdom">
-                <option value="United States">
-            </datalist><br>
-            <input type="email" required placeholder="E-mail"/><br>
-            <input type="nummer" required placeholder="Telefoonnummer"/><br>
-            <input type="date" name="datum" required placeholder="jouw geboortedatum" /><br>
-            <input type="checkbox"> Ja, ik accepteer Petit Bonheur algemene voorwaarden 
-            <div id="Verzendwijze factuur"></div>
-            <input type="radio" required name="factuur" value="bovenstaand"/>Factuur per e-mail 
-            <input type="radio" required name="factuur" value="ander"/>Factuur geprint bij de bestelling<br>
-            <input type="submit"/>
-        </div>
+    
+        </form>
     </div>
-
-    </form>
-    </div>
-    </div>
+<div id="Footer">
+    &copy; Gemaakt door Noa van Mil
+</div>
+</div>
 </body>
 </html>
