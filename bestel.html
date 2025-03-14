@@ -18,7 +18,7 @@
         </div>
         <div id="achtergrond">
             <form action="doelbestand.php" method="post">
-                <h2>Je gegevens</h2><br>
+                <h2>Bestel formulier</h2><br>
                 <div class="column-container">
                     <div class="column">
                         <h3>
@@ -79,10 +79,12 @@
                         <label for="voorwaarden">Ja, ik accepteer de algemene voorwaarden</label><br>
 
                         <!-- verzendwijzen factuur -->
+                         <div id="facturen">
                             <input type="radio" required name="factuur" id="factuur_email" value="bovenstaand">
                             <label for="factuur_email">Factuur per e-mail</label>
                             <input type="radio" required name="factuur" id="factuur_print" value="ander">
-                            <label for="factuur_print">Factuur geprint bij de bestelling</label><br><br>
+                            <label for="factuur_print">Factuur geprint</label><br><br>
+                        </div>
 
                         <input type="submit">
                     </div>
