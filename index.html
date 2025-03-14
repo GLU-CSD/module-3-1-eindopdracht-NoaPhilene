@@ -32,13 +32,17 @@
       <div id="sideBar">
         <h2>Bonbons</h2>
         <h3>-<a href="puur.html">puur</a> -<a href="melk.html">melk</a> -<a href="wit.html">wit</a></h3>
+
         <h2><span class="prijs">Prijs</span></h2>
         <div class="slidecontainer">
-          <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+          <input type="range" min="0" max="2" value="1" class="slider" step="0.05" id="myRange">
+          <p>Value: <span id="demo"></span></p>
         </div>
+
+
         <h2>Partners</h2>
         <h4>-<a href="https://u240060.gluwebsite.nl/webshop/">Kleurkaart<span class="onder">Express</span></a>
-          -<a href= "https://u240378.gluwebsite.nl/webshop/">Hello Kitty</a>
+          -<a href="https://u240378.gluwebsite.nl/webshop/">Hello Kitty</a>
           -Duck store</h4>
         <h2>Contact</h2>
         <h5>-nummer -email</h5>
@@ -70,6 +74,17 @@
     </div>
     <div id="Footer">&copy; Gemaakt door Noa Philène van Mil 2025</div>
   </div>
+
+  <script>
+    var slider = document.getElementById("myRange");
+    var output = document.getElementById("demo");
+    output.innerHTML = slider.value;
+
+    slider.oninput = function () {
+      output.innerHTML = this.value;
+    }
+  </script>
+
 </body>
 
 </html>

@@ -1,6 +1,6 @@
-*{
-    padding:0;
-    margin:0;
+* {
+    padding: 0;
+    margin: 0;
 }
 
 #container {
@@ -18,13 +18,13 @@
     background-color: #dcaeae;
 }
 
-#logo{
+#logo {
     width: 144px;
     height: auto;
-    border:5px solid black;
+    border: 5px solid black;
 }
 
-h1{
+h1 {
     position: relative;
     top: -15px;
     font-family: 'Bunga', sans-serif;
@@ -39,6 +39,7 @@ h1{
     font-weight: normal;
     font-style: normal;
 }
+
 @font-face {
     font-family: 'handmade';
     src: url('assets/fonts/beautiful-handmade') format('truetype');
@@ -46,14 +47,14 @@ h1{
     font-style: normal;
 }
 
-#winkelmandje{
+#winkelmandje {
     position: relative;
     top: -17px;
     width: 170px;
     height: auto;
 }
 
-#sideBar{
+#sideBar {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -63,7 +64,47 @@ h1{
     background-color: #dcaeae;
 }
 
-h2{
+/* range slider stuff */
+.slidecontainer {
+    width: 90%;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 10px;
+    border-radius: 5px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #150a08;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #090403;
+    cursor: pointer;
+}
+
+
+h2 {
     padding-top: 10px;
     font-family: 'Bunga', sans-serif;
     font-size: 36px;
@@ -71,7 +112,7 @@ h2{
     color: #432018;
 }
 
-h3{
+h3 {
     margin-top: -16px;
     padding-bottom: 10px;
     font-family: 'handmade';
@@ -80,7 +121,7 @@ h3{
     color: #432018;
 }
 
-.prijs{
+.prijs {
     padding-top: 10px;
     font-family: 'Bunga', sans-serif;
     font-size: 36px;
@@ -89,12 +130,12 @@ h3{
     padding-right: 52px;
 }
 
-h3 a{
+h3 a {
     text-decoration: none;
     color: #432018;
 }
 
-h4{
+h4 {
     margin-top: -6px;
     padding-bottom: 14px;
     font-family: 'handmade';
@@ -103,7 +144,7 @@ h4{
     color: #432018;
 }
 
-h4 a{
+h4 a {
     color: #432018;
 }
 
@@ -112,7 +153,7 @@ h4 a{
     margin-left: 25px;
 }
 
-h5{
+h5 {
     margin-top: -6px;
     padding-bottom: 14px;
     font-family: 'handmade';
@@ -121,14 +162,14 @@ h5{
     color: #432018;
 }
 
-#achtergrond{
+#achtergrond {
     display: flex;
     height: auto;
     background-color: #f1e8e2;
 }
 
-#Footer{
-    display:flex;
+#Footer {
+    display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -158,7 +199,8 @@ h5{
 .product img {
     width: 69%;
     height: 100%;
-    object-fit: cover; /* Laat de afbeelding netjes in het vakje passen */
+    object-fit: cover;
+    /* Laat de afbeelding netjes in het vakje passen */
 }
 
 @media (max-width: 850px) {
@@ -166,31 +208,65 @@ h5{
         width: 130px;
     }
 
-    h1{
+    h1 {
         font-size: 50px;
     }
 }
 
 @media (max-width: 705px) {
-    #logo{
+    #logo {
         width: 75px;
     }
 
-    #topBar{
+    #winkelmandje {
+        top: -7px;
+        width: 89px;
+    }
+
+    #topBar {
         height: 80px;
     }
 
-    /* #sidebar{
+    #sideBar {
         width: 84px;
-    } */
+    }
 
     .product {
         width: 100px;
     }
 
-    h1{
-        font-size: 36px;
-        top: -6px;
-        /* left: 20px; */ */
+    h1 {
+        font-size: 5vw;
+        top: -10px;
+    }
+
+    h2{
+        font-size: 19px;
+    }
+
+    .prijs{
+        font-size: 19px;
+        padding-right: 23px;
+    }
+
+    h3 {
+        font-size: 12px;
+        width: 32px;
+        margin-top: -5px;
+    }
+
+    h4{
+        font-size: 11px;
+        width: 60px;
+        margin-top: -5px;
+    }
+
+    h5{
+        font-size: 11px;
+        width: 44px;
+    }
+
+    .onder {
+        margin-left: 10px;
     }
 }
