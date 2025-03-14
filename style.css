@@ -124,8 +124,6 @@ h5{
 
 #achtergrond{
     display: flex;
-    /* flex-direction: column;
-    flex-wrap: wrap; */
     height: auto;
     background-color: #f1e8e2;
 }
@@ -162,10 +160,4 @@ h5{
     width: 69%;
     height: 100%;
     object-fit: cover; /* Laat de afbeelding netjes in het vakje passen */
-}
-
-@media screen and (max-width: 600px){
-    h1{
-        font-size: small;
-    }
 }

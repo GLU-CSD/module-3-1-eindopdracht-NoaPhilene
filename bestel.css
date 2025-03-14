@@ -14,7 +14,7 @@
     flex-direction: row;
     align-items: baseline;
     justify-content: space-between;
-    width: 1512px;
+    width: 100%;
     height: 160px;
     background-color: #dcaeae;
 }
@@ -31,7 +31,7 @@
 }
 
 #achtergrond{
-    width: 1512px;
+    width: 100%;
     height: 480px;
     background-color: #f1e8e2;
     color: #432018;
@@ -48,7 +48,7 @@ h1{
     position: relative;
     top: -52px;
     font-family: 'Bunga', sans-serif;
-    font-size: 69px;
+    font-size: 5vw;
     font-weight: normal;
     color: #432018;
 }
@@ -80,7 +80,7 @@ h3{
     display:flex;
     justify-content: center;
     align-items: center;
-    width: 1512px;
+    width: 100%;
     height: 100px;
     background-color: #dcaeae;
 }
